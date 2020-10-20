@@ -62,6 +62,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker1.TabIndex = 7;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // button1
             // 
@@ -72,6 +73,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "GetCurrentDate";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -80,6 +82,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
@@ -93,6 +96,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "AutonBuildCalculator";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
